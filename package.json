@@ -1,10 +1,11 @@
 {
   "name": "dark-blackboard-jzone-syntax",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Atom syntax theme with a dark UI based on the blackboard theme",
   "repository": "https://github.com/jzonearcade/dark-blackboard-jzone-syntax",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.13.0"
+    "atom": ">=1.13.0",
+    "type": "syntax"
   }
 }
