@@ -1,0 +1,148 @@
+@import "./styles/base.less";
+
+@background: rgba(0, 0, 0, 0.65);
+@text-color: #E8E8E8;
+@keyword: #FBDE2D;
+@entity: #FF6400;
+@comment: #AEAEAE;
+
+atom-text-editor, atom-text-editor .gutter {
+    background-color: @background;
+    color: @text-color;
+}
+
+atom-text-editor.is-focused .cursor {
+    border-color: rgba(255, 255, 255, 0.65);
+}
+
+.editor .selection .region {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.editor.is-focused  .selection .region {
+background-color: rgba(25, 38, 76, 1);
+}
+
+.is-focused .line-number.cursor-line-no-selection,
+.is-focused .line.cursor-line {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.syntax--comment, .syntax--raw {
+    color: @comment;
+}
+
+.syntax--constant {
+    color: #D8FA3C;
+}
+
+.syntax--entity {
+    color: @entity;
+}
+
+.syntax--keyword {
+    color: @keyword;
+}
+
+.syntax--storage {
+    color: @keyword;
+}
+
+.syntax--string, .syntax--meta.syntax--verbatim {
+    color: #61CE3C;
+}
+
+.syntax--support {
+    color: #8DA6CE;
+}
+
+.syntax--variable {
+    color: @text-color;
+}
+
+.syntax--invalid.syntax--deprecated {
+    font-style: italic;
+    color: #AB2A1D;
+}
+
+.syntax--invalid.syntax--illegal {
+    color: @text-color;
+    background-color: #9D1E15;
+}
+
+.syntax--entity.syntax--other.syntax--inherited-class {
+    font-style: italic;
+    color: @entity;
+}
+
+.syntax--string .syntax--constant.syntax--other.syntax--placeholder {
+    color: @entity;
+}
+
+.syntax--meta.syntax--function-call.py {
+    color: #BECDE6;
+}
+
+.syntax--meta.syntax--tag, .syntax--meta.syntax--tag .syntax--entity {
+    color: #7F90AA;
+}
+
+.syntax--entity.syntax--name.syntax--section {
+    color: #FFF;
+}
+
+.syntax--keyword.syntax--type.syntax--variant {
+    color: #D5E0F3;
+}
+
+.syntax--source.syntax--ocaml .syntax--keyword.syntax--operator.syntax--symbol {
+    color: @text-color;
+}
+
+.syntax--source.syntax--ocaml .syntax--keyword.syntax--operator.syntax--symbol.syntax--infix {
+    color: #8DA6CE;
+}
+
+.syntax--source.syntax--ocaml .syntax--keyword.syntax--operator.syntax--symbol.syntax--prefix {
+    color: #8DA6CE;
+}
+
+.syntax--source.syntax--ocaml .syntax--keyword.syntax--operator.syntax--symbol.syntax--infix.syntax--floating-point {
+    text-decoration: underline;
+}
+
+.syntax--source.syntax--ocaml .syntax--keyword.syntax--operator.syntax--symbol.syntax--prefix.syntax--floating-point {
+    text-decoration: underline;
+}
+
+.syntax--source.syntax--ocaml .syntax--constant.syntax--numeric.syntax--floating-point {
+    text-decoration: underline;
+}
+
+.syntax--text.syntax--tex.syntax--latex .syntax--meta.syntax--function.syntax--environment {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.syntax--text.syntax--tex.syntax--latex .syntax--meta.syntax--function.syntax--environment .syntax--meta.syntax--function.syntax--environment {
+    background-color: rgba(122, 150, 250, 0.03);
+}
+
+.syntax--text.syntax--tex.syntax--latex .syntax--support.syntax--function {
+    color: #FBDE2D;
+}
+
+.syntax--source.syntax--plist .syntax--string.syntax--unquoted, .syntax--source.syntax--plist .syntax--keyword.syntax--operator {
+    color: #FFF;
+}
+
+.syntax--heading {
+    color: #FFFC00;
+}
+
+.syntax--italic {
+    font-style: italic;
+}
+
+.syntax--bold {
+    font-weight: bold;
+}
